@@ -11,6 +11,21 @@ export default function Index() {
         Pantallas
       </Text>
 
+       <List.Item
+        title="Autor"
+        titleStyle={{ fontSize: 20, fontWeight: '600' }}
+        style={{
+          backgroundColor: '#f9f8ff',
+          borderRadius: 14,
+          marginBottom: 12,
+          padding: 4,
+          elevation: 2,
+        }}
+        left={() => <List.Icon icon="account" color="#525151ff" />}
+        right={() => <List.Icon icon="chevron-right" color="#ccc" />}
+        onPress={() => router.push('/autor')}
+      />
+
       <List.Item
         title="Inicio de Sesión"
         titleStyle={{ fontSize: 20, fontWeight: '600' }}
